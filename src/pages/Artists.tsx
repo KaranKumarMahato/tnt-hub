@@ -133,7 +133,6 @@ const Artists = () => {
                   <SelectValue placeholder="All Categories" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Categories</SelectItem>
                   {categories.map(category => (
                     <SelectItem key={category.id} value={category.id}>
                       {category.icon} {category.name}
@@ -148,7 +147,6 @@ const Artists = () => {
                   <SelectValue placeholder="All Locations" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Locations</SelectItem>
                   {locations.map(location => (
                     <SelectItem key={location} value={location}>
                       {location}
@@ -163,7 +161,6 @@ const Artists = () => {
                   <SelectValue placeholder="Any Price" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Any Price</SelectItem>
                   <SelectItem value="under-1000">Under $1,000</SelectItem>
                   <SelectItem value="1000-3000">$1,000 - $3,000</SelectItem>
                   <SelectItem value="3000-5000">$3,000 - $5,000</SelectItem>
